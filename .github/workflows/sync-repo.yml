@@ -40,11 +40,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
           cd target-repo
-          if git diff --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Sync changes from myportfolio excluding style.css"
-            git push origin main
-          fi
+          git commit -m "Sync changes from myportfolio excluding style.css"
+          git push origin main
+          
        
        
