@@ -44,7 +44,7 @@ jobs:
         #     echo "No changes to commit"
         #   else
         #     git commit -m "Sync changes from myportfolio excluding style.css"
-        #     git push origin main
+        #     git push origin mains
         #   fi
         run: |
           cd target-repo
