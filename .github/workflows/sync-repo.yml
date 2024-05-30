@@ -30,7 +30,7 @@ jobs:
 
       - name: Sync files except application.properties
         run: |
-          rsync -av --exclude='style.css' --delete . target-repo/
+          rsync -av --exclude='style.css' --exclude='.git'--delete . target-repo/
           cd target-repo
           git add .
           git status
