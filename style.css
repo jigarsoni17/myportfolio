@@ -299,7 +299,7 @@ body {
     z-index: 100;
 }
 
-/* KEYFRAMES ANIMATIONS */
+/* KEYFRAMES ANIMATIONS JSS */
 
 @keyframes showRight {
     100% {
