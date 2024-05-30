@@ -48,6 +48,7 @@ jobs:
         #   fi
         run: |
           cd target-repo
+          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/jigarsoni17/myportfolio_sync.git
           if ! git diff-index --quiet HEAD --; then
             git commit -m "Sync changes from myportfolio excluding style.jss"
             git push origin main
