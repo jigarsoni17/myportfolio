@@ -41,6 +41,5 @@ jobs:
         run: |
           cd target-repo
           git commit -m "Sync changes from myportfolio excluding style.css"
-          git remote set-url origin https://github.com/jigarsoni17/myportfolio_sync.git
+          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/jigarsoni17/myportfolio_sync.git
           git push origin main
-       
